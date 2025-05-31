@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "pre-deploy-check": "ts-node scripts/pre-deploy-check.ts",
+    "deploy": "npm run pre-deploy-check && vercel deploy --prod"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "node-fetch": "^3.3.1",
+    "dotenv": "^16.0.3"
+  }
+}
